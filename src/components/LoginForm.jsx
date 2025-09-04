@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import loginImage from '../assets/login-illustration.jpg';  // Ensure this path is correct
 
 const LoginForm = () => {
@@ -72,9 +73,12 @@ const LoginForm = () => {
 
               {/* Forgot Password */}
               <div className="text-right">
-                <a href="#" className="text-sm text-indigo-600 hover:text-indigo-800 transition-colors">
+                <Link 
+                  to="/forgot-password" 
+                  className="text-sm text-indigo-600 hover:text-indigo-800 transition-colors"
+                >
                   Forgot Password?
-                </a>
+                </Link>
               </div>
 
               {/* Login Button */}
